@@ -4,6 +4,7 @@ import { AlignJustify, X } from "lucide-react";
 import DropDownMenu from "./dropDownMenu"; // Ensure this component is correct
 
 const Navbar = () => {
+  // useSTate
   const [isDroppedDownVisible, setIsDroppedDownVisible] = useState(false);
 
   function toggleDropDown() {
@@ -29,7 +30,11 @@ const Navbar = () => {
             />
           </div>
         </div>
-        <div className="cursor-pointer hidden md:flex space-x-10 items-center text-slate-300 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+        <div className="cursor-pointer hidden 
+        md:flex space-x-10 items-center
+      text-slate-300 text-center 
+        bg-clip-text text-transparent 
+        bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
           {/* Navbar Names */}
           <div className="hover:text-gray-50">Website Design</div>
           <div className="hover:text-gray-50">Graphic Design</div>
