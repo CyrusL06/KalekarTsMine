@@ -38,9 +38,9 @@ const Navbar = () => {
           {/* Navbar Names */}
           <div className="hover:text-gray-50">Website Design</div>
           <div className="hover:text-gray-50">Graphic Design</div>
-          <div className="hover:text-gray-50">Shopify Design</div>
+          {/* <div className="hover:text-gray-50">Shopify Design</div> */}
           <div className="hover:text-gray-50">App Design</div>
-          <div className="hover:text-gray-50">Pricing</div>
+          {/* <div className="hover:text-gray-50">Pricing</div> */}
         </div>
 
         {/* Menu on Mobile */}

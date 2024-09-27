@@ -2,7 +2,7 @@
   "name": "kalekaradvance",
   "private": true,
   "version": "0.0.0",
-  "type": ".cjs",
+  "type": ".commonjs",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

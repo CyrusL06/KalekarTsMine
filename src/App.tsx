@@ -5,7 +5,8 @@
 import Navbar from "./components/navbar"
 import { Spotlight } from "./components/ui/Spotlight"
 import {InfiniteMovingCardsDemo} from "./components/InfiniteMovingCardsDemo"
-// import AnimatedShinyTextDemo from "./components/ui/AnimatedShinyText"
+import { AnimatedShinyTextDemo } from "./components/AnimatedShinyTextDemo"
+
 
 
 function App() {
@@ -22,14 +23,21 @@ function App() {
       className="md:flex md:left-80" 
       fill="white"
       />
+        {/* Main Container */}
         <div className=" p-4 mx-auto relative z-10 w-full pt-10 md:pt-32 px-2 ">
+
+          {/* Shiny Text */}
+          <div className="pb-5">
+          <AnimatedShinyTextDemo />
+          </div>
+
+          {/* Header Design */}
           <div className=" text-4xl pb-5 md:text-7xl px-6 text-center 
           bg-clip-text text-transparent 
           bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
             Create, Grow and <br/> Scale your business
           </div>
-            
-            {/* <AnimatedShinyTextDemo/> */}
+
 
             <p className="mt-4 text-lg font-normal text-neutral-300 max-w-lg text-center mx-auto px-4" >
                 Custom tailored solutions for your business.
@@ -43,14 +51,13 @@ function App() {
             ">
               Book a Call
             </a>
+            
+        </div>
 
-            <div className="w-full pt-20 ">
+        <div className="w-full pt-20 ">
               {/* Cards */}
               <InfiniteMovingCardsDemo />
             </div>
-
-            
-        </div>
       </div>
   )
 }
