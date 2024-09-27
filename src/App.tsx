@@ -5,6 +5,8 @@
 import Navbar from "./components/navbar"
 import { Spotlight } from "./components/ui/Spotlight"
 import {InfiniteMovingCardsDemo} from "./components/InfiniteMovingCardsDemo"
+// import AnimatedShinyTextDemo from "./components/ui/AnimatedShinyText"
+
 
 function App() {
   return (
@@ -26,6 +28,9 @@ function App() {
           bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
             Create, Grow and <br/> Scale your business
           </div>
+            
+            {/* <AnimatedShinyTextDemo/> */}
+
             <p className="mt-4 text-lg font-normal text-neutral-300 max-w-lg text-center mx-auto px-4" >
                 Custom tailored solutions for your business.
                  We are a team of creatives who are excited to help grow your business

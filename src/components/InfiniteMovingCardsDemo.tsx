@@ -1,6 +1,5 @@
 
 
-import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
  export function InfiniteMovingCardsDemo() {

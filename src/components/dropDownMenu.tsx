@@ -4,7 +4,7 @@ interface DropDownMenuProps {
     onClose: () => void;
 }
 
-const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose }) => {
+const DropDownMenu: React.FC<DropDownMenuProps> = ({ }) => {
     return ( 
         <motion.div 
             className="
