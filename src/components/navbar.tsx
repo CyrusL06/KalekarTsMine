@@ -43,25 +43,7 @@ const Navbar = () => {
           {/* <div className="hover:text-gray-50">Pricing</div> */}
         </div>
 
-        {/* Menu on Mobile */}
-        <div className="flex md:hidden">
-          {isDroppedDownVisible ? (
-            <>
-              <X
-                onClick={toggleDropDown}
-                className="w-8 h-8 text-slate-300 cursor-pointer"
-              />
-              {/* Uncomment to use the DropDownMenu */}
-              {/* Passes closeDropDown */}
-              <DropDownMenu onClose={closeDropDown} />
-            </>
-          ) : (
-            <AlignJustify
-              onClick={toggleDropDown}
-              className="w-8 h-8 text-slate-300 cursor-pointer"
-            />
-          )}
-        </div>
+        
           {/* contact + TS design */}
         <div className=" hidden md:flex  
         inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50  ">
@@ -81,6 +63,25 @@ const Navbar = () => {
                 Border Magic
                 </span>
             </button> */}
+        </div>
+        {/* Menu on Mobile */}
+        <div className="flex md:hidden">
+          {isDroppedDownVisible ? (
+            <>
+              <X
+                onClick={toggleDropDown}
+                className="w-8 h-8 text-slate-300 cursor-pointer"
+              />
+              {/* Uncomment to use the DropDownMenu */}
+              {/* Passes closeDropDown */}
+              <DropDownMenu onClose={closeDropDown} />
+            </>
+          ) : (
+            <AlignJustify
+              onClick={toggleDropDown}
+              className="w-8 h-8 text-slate-300 cursor-pointer"
+            />
+          )}
         </div>
       </div>
     </div> 
