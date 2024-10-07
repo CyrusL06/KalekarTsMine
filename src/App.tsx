@@ -2,6 +2,8 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 
+// Package.json need updated!! Outdated vite
+
 import Navbar from "./components/navbar"
 import { Spotlight } from "./components/ui/Spotlight"
 import {InfiniteMovingCardsDemo} from "./components/InfiniteMovingCardsDemo"
