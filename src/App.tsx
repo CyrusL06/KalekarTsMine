@@ -5,6 +5,9 @@
 import Navbar from "./components/navbar"
 import { Spotlight } from "./components/ui/Spotlight"
 import {InfiniteMovingCardsDemo} from "./components/InfiniteMovingCardsDemo"
+import { BlurInHeroMessage } from "./components/BlurInMessage"
+import { BlurInParagraph } from "./components/BlurIn-Paragraph"
+// import { BlurInDemo } from "./components/Blur-In-Demo"
 // import { AnimatedShinyTextDemo } from "./components/AnimatedShinyTextDemo"
 
 
@@ -27,7 +30,7 @@ function App() {
       fill="white"
       />
         {/* Main Container */}
-        <div className="h-50  p-4 mx-auto relative z-10 w-full pt-[100px] pb-[100px] md:pt-20 md:pb-20 px-2 ">
+        <div className="h-50  p-4 mx-auto relative z-10 w-full pt-[60px] pb-[100px] md:pt-20 md:pb-20 px-2 ">
 
           {/* Shiny Text */}
           {/* <div className="pb-5">
@@ -37,21 +40,23 @@ function App() {
           
           {/* Header Design */}
           {/* OHH SHI its the normal {text-4xl} that controls the font */}
-          <div className=" font-Inter font-bold text-[45px] leading-none md:text-7xl 
-          mt-5  md:mt-2  px-6 text-center 
-          bg-clip-text text-transparent 
-          bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+          <div>
             {/* Create, Grow and <br/> Scale your business */}
-            Beautiful. Fast. Private. <br/>Your Browser, Your Way
+            {/* <BlurInDemo/> */}
+            <BlurInHeroMessage/>
+            {/* Beautiful. Fast. Private. <br/>Your Browser, Your Way */}
           </div>
-
-
-            <p className="mt-10 text-base md:text-base sm:text-xs font-Poppins
+            {/* <p className="mt-10 text-base md:text-base sm:text-xs font-Poppins
              text-neutral-300 max-w-[400px] md:max-w-[640px] text-center mx-auto px-4" >
                 Beautifully designed, privacy-focused, and packed with features.
                 We care about your experience, not your data.
                  
-            </p>
+            </p> */}
+
+            <div className=
+            "text-neutral-300 max-w-[400px] md:max-w-[640px] text-center mx-auto px-4" >
+                <BlurInParagraph/>
+            </div>
             
             <a href="/book"
             className="cursor pointer mt-10
